@@ -1,0 +1,7 @@
+build:
+  publish: "storage/app/static"
+  command: "php please ssg:generate"
+  environment:
+    PHP_VERSION: "7.2"
+    APP_KEY: base64:I3cCqsfbQKxRVtCJQG2swJP51zTa1C9If397c4IlsW8=
+    APP_URL: "https://journal.jackmcdade.com"
