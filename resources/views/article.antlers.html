@@ -1,14 +1,14 @@
 <header class="lg:absolute left-0 top-32 text-center w-full flex items-center justify-center">
     <h1 class="uppercase text-lg bg-aqua px-2 shadow lg:h-10 leading-relaxed">
-        {{ collection:previous limit="1" }}
+        {{ collection:newer limit="1" }}
             <a href="{{ url }}" class="{{ no_results ? 'opacity-25 cursor-text' : 'hover:text-blue' }}"><<<</a>
             {{ unless no_results }}<keyboard-link url="{{ url }}" :code="37"></keyboard-link>{{ /if }}
-        {{ /collection:previous }}
+        {{ /collection:newer }}
             {{ title }}
-        {{ collection:next limit="1" }}
+        {{ collection:older limit="1" }}
             <a href="{{ url }}" class="{{ no_results ? 'opacity-50 cursor-text' : 'hover:text-blue' }}">>>></a>
-            {{ unless no_results }}<keyboard-link url="{{ url }}" :code="37"></keyboard-link>{{ /if }}
-        {{ /collection:next }}
+            {{ unless no_results }}<keyboard-link url="{{ url }}" :code="39"></keyboard-link>{{ /if }}
+        {{ /collection:older }}
     </h1>
 </header>
 
