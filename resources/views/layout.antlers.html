@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{{ title }} — {{ settings:site_name }}</title>
+        <title>{{ segment_1 ?= title | ensure_right: —&nbsp;}} {{ settings:site_name }}</title>
         <meta name="description" content="{{ excerpt ?? title ?? settings:site_name }}">
         <meta name="theme-color" content="0030FF">
         <link rel="icon" type="image/png" href="/favicon-32x32.gif" sizes="32x32">
@@ -21,8 +21,11 @@
                     </footer>
                 </article>
             </div>
-            <a href="https://statamic.com" class="absolute bottom-0 lg:pb-2 uppercase text-aqua-light hover:text-white right-0">Powered by Statamic</a>
         </div>
+        <marquee class="absolute bottom-0 left-0 right-0 uppercase w-full">
+            <a href="https://jackmcdade.com" class="mx-4 text-aqua-light hover:text-white">Copyright 1983 Jack McDade</a>
+            <a href="https://statamic.com" class="mx-4 text-aqua-light hover:text-white">Powered by Statamic</a>
+        </marquee>
         <script src="{{ mix src='/js/site.js' }}"></script>
     </body>
 </html>

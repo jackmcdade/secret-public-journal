@@ -2,17 +2,17 @@ id: 9242876a-41c4-42f8-96f8-ac92d6025406
 title: Settings
 blueprint: global_settings
 data:
-  site_name: 'Personal Journal of Jack McDade'
+  site_name: 'Jack McDade''s Secret Public Journal '
   links:
     -
-      name: Home
+      name: Index
       url: '/'
-    -
-      name: JackMcDade.com
-      url: 'https://jackmcdade.com'
     -
       name: Twitter
       url: 'https://twitter.com/jackmcdade'
     -
-      name: E-Mail Me
+      name: Statamic
+      url: 'https://statamic.com'
+    -
+      name: E-Mail
       url: 'mailto:shout@jackmcdade.com'
