@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "31d1284adb7d3d66c150a89790e5007a",
+    "content-hash": "2726c943a154969e3a68c9e133bd2027",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -3463,7 +3463,7 @@
         },
         {
             "name": "statamic/ssg",
-            "version": "dev-master",
+            "version": "0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/statamic/ssg.git",
@@ -7664,8 +7664,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "statamic/cms": 10,
-        "statamic/ssg": 20
+        "statamic/cms": 10
     },
     "prefer-stable": true,
     "prefer-lowest": false,
