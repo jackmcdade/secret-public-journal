@@ -11,6 +11,4 @@
 |
 */
 
-Route::statamic('/', 'home', [
-    'title' => 'Home'
-]);
+Route::statamic('/', 'home');
