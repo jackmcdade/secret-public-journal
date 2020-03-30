@@ -1,4 +1,4 @@
-title: 'Article'
+title: Article
 sections:
   main:
     display: Main
@@ -13,11 +13,14 @@ sections:
         field:
           type: markdown
           display: Content
-          restrict: false
+          restrict: true
           automatic_line_breaks: true
           automatic_links: false
           escape_markup: false
           smartypants: false
+          listable: hidden
+          container: assets
+          folder: content
       -
         handle: excerpt
         field:
