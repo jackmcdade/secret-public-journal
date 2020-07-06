@@ -25,9 +25,5 @@ rm composer-setup.php
 # INSTALL COMPOSER DEPENDENCIES
 php composer.phar install
 
-# Generate Laravel App Key
-# touch .env
-# php artisan key:generate
-
 # BUILD STATIC SITE
 php please ssg:generate
