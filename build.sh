@@ -1,15 +1,11 @@
 #!/bin/sh
 
-
 # Install PHP & WGET
-
-# php -v
 yum install -y amazon-linux-extras
 amazon-linux-extras enable php7.4
 yum clean metadata
 yum install php php-{common,curl,mbstring,gd,gettext,bcmath,json,xml,fpm,intl,zip,imap}
 yum install wget
-php --version
 
 # INSTALL COMPOSER
 EXPECTED_CHECKSUM="$(wget -q -O - https://composer.github.io/installer.sig)"
@@ -29,12 +25,9 @@ rm composer-setup.php
 # INSTALL COMPOSER DEPENDENCIES
 php composer.phar install
 
-# BUILD FRONTEND
-# npm install && npm run prod
-
 # Generate Laravel App Key
-touch .env
-php artisan key:generate
+# touch .env
+# php artisan key:generate
 
 # BUILD STATIC SITE
 php please ssg:generate
