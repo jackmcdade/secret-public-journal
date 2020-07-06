@@ -2,13 +2,10 @@
 
 
 # Install PHP & WGET
-yum install epel-release yum-utils -y
-yum install http://rpms.remirepo.net/enterprise/remi-release-7.rpm
-yum-config-manager --enable remi-php74
-yum install php php-common php-opcache php-mcrypt php-cli php-gd php-cur -y wget
-yum install wget
 
-php -v
+# php -v
+cat /etc/os-release. lsb_release -a. hostnamectl
+uname -r
 
 # INSTALL COMPOSER
 # EXPECTED_CHECKSUM="$(wget -q -O - https://composer.github.io/installer.sig)"
