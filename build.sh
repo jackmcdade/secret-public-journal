@@ -33,6 +33,7 @@ php composer.phar install
 # npm install && npm run prod
 
 # Generate Laravel App Key
+touch .env
 php artisan key:generate
 
 # BUILD STATIC SITE
