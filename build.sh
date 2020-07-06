@@ -4,8 +4,11 @@
 # Install PHP & WGET
 
 # php -v
- yum install -y amazon-linux-extras
- amazon-linux-extras | grep php
+yum install -y amazon-linux-extras
+amazon-linux-extras enable php7.4
+yum clean metadata
+yum install php php-{common,curl,mbstring,gd,gettext,bcmath,json,xml,fpm,intl,zip,imap}
+php --version
 
 # INSTALL COMPOSER
 # EXPECTED_CHECKSUM="$(wget -q -O - https://composer.github.io/installer.sig)"
