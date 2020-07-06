@@ -32,5 +32,8 @@ php composer.phar install
 # BUILD FRONTEND
 # npm install && npm run prod
 
+# Generate Laravel App Key
+php artisan key:generate
+
 # BUILD STATIC SITE
 php please ssg:generate
