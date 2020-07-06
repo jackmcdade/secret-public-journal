@@ -2,10 +2,11 @@
 
 
 # Install PHP & WGET
-yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
-yum -y install https://rpms.remirepo.net/enterprise/remi-release-7.rpm
-yum update
-yum install php php-cli wget
+yum install epel-release yum-utils -y
+yum install http://rpms.remirepo.net/enterprise/remi-release-7.rpm
+yum-config-manager --enable remi-php74
+yum install php php-common php-opcache php-mcrypt php-cli php-gd php-cur -y wget
+yum install wget
 
 php -v
 
